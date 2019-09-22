@@ -7,7 +7,7 @@ function CallAPIfromGetRequest($url)
 }
 
 $access_token = ""; //sana ait access token'ı string içine yapıştırabilirsin
-$url = "https://api.instagram.com/v1/users/self/?access_token=" + $access_token;
+$url = sprintf("https://api.instagram.com/v1/users/self/?access_token=%s",$access_token);
 $instagram_array = CallAPIfromGetRequest($url)
 
 ?>
